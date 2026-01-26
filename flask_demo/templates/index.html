@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager API</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 5px 0; }
+        button { margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Task Manager</h1>
+
+    <input type="text" id="newTask" placeholder="Enter task title">
+    <button onclick="addTask()">Add Task</button>
+
+    <h2>Tasks</h2>
+    <ul id="taskList"></ul>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
